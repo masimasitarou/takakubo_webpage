@@ -18,8 +18,10 @@
                 alert("メールアドレスの形式で入力してください。");
             } else if(document.mail_form.pass.value == ""){
                 alert("パスワードは必須です。");
-            }else{
+            } else if(document.mail_form.id.value == "smtakakubo@nissho-ele.co.jp"　&& document.mail_form.pass.value == "aaa"){
                 window.location.href = 'menu.html';
+            }else{
+                alert("ユーザー名もしくはパスワードが間違っています。");
             }
         }
     </script>
