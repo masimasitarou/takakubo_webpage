@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ログインページ</title>
+    <link rel="stylesheet" type="text/css" href="takakubo.css">
+
+    <script type="text/javascript">
+
+
+        function checkForm() {
+            
+
+            if (document.mail_form.id.value == "") {
+                alert("ログインIDは必須です。");
+            } else if(!document.mail_form.id.value.match(/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)){
+                alert("メールアドレスの形式で入力してください。");
+            } else if(document.mail_form.pass.value == ""){
+                alert("パスワードは必須です。");
+            }else{
+                window.location.href = 'menu.html';
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <form class="content" action="menu.html" method="GET" name="mail_form">
+        <p>ログインID(メールアドレス):<input type="email" name="id"></p>
+        <p>パスワード:<input type="password" name="pass"></p>
+
+        <button type="button" onclick="checkForm();" >ログイン</button>
+        <button type="button" onclick="location.href='account_registration.html'">アカウント作成</button>
+    </form>
+</body>
+
+</html>
