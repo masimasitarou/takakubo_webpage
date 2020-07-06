@@ -27,6 +27,24 @@ input{
     padding: 8px;
 }
 
+input:required{
+    color: #630015;
+	border-color: #c20c33;
+	background-color: #ffd9e1;
+}
+
+input:invalid{
+    color: #630015;
+	border-color: #c20c33;
+	background-color: #ffd9e1;
+}
+
+input:valid{
+    color: #333;
+	border-color: #ccc;
+	background: #fff;
+}
+
 button{
     width: 100%;
     background-color: #2096f3;

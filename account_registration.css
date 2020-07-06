@@ -8,7 +8,7 @@ body{
 
 .content{
    /* background-color: rgb(105, 213, 228);*/
-    background-color: #fff; 
+    background-color: #fff;
     width: 400px;
     font-size: 24px;
     margin-right: auto;
@@ -27,6 +27,30 @@ input{
     padding: 8px;
 }
 
+input:required{
+    color: #630015;
+	border-color: #c20c33;
+	background-color: #ffd9e1;
+}
+
+input:invalid{
+    color: #630015;
+	border-color: #c20c33;
+	background-color: #ffd9e1;
+}
+
+input:valid{
+    color: #333;
+	border-color: #ccc;
+	background: #fff;
+}
+
+.cssChange{
+    color: #630015;
+	border-color: #c20c33;
+	background-color: #ffd9e1;
+}
+
 button{
     width: 100%;
     background-color: #2096f3;
@@ -36,4 +60,20 @@ button{
     margin-bottom: 10px;
     border: 0;
     border-radius: 10px;
+}
+
+.logout{
+    width: 120px;
+    background-color: #2096f3;
+    color:#fff;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.errorAll{
+    color: red;
+    font-size: 12px;
 }
