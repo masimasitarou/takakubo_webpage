@@ -3,7 +3,10 @@ p{
 }
 
 body{
-    background-color: #fafafa;
+    padding: 80px 0 100px 0;
+    background-image: url('cafe.jpg');
+    height: 550px;
+    background-size: cover;
 }
 
 .content{
@@ -13,58 +16,60 @@ body{
     font-size: 24px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 15px;
+    margin-top: 50px;
     margin-bottom: 20px;
     border: 1px solid #d1d1d1;
     padding:30px;
+    border-radius: 20px;
+    opacity: 0.96;
 }
 
-input{
-    border: none;
-    border-bottom: 1px solid #d1d1d1;
-    font-size: 1.2em;
-    width: 100%;
-    padding: 8px;
+.inline-block{
+  text-align: center;
 }
 
 button{
-    width: 100%;
+    display: inline-block;
+    width: 30%;
     background-color: #2096f3;
     color:#fff;
     padding: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
+    margin-right: 35px;
+    margin-left: 35px;
     border: 0;
     border-radius: 10px;
 }
 
-.btton:hover {
-  opacity: 1;
+button:hover {
+  opacity: 0.8;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
     font-size: 12px;
-    margin: 20px;
+    margin-top: 30px;
+    font-size: 13px;
   }
 
   .th1 {
     color: black;
     background-color: lightgray;
-    padding: 10px;
+    padding: 15px;
     width: 60%;
   }
-  
+
   .th2{
     background-color: lightgray;
-    padding: 10px;
+    padding: 15px;
     width: 20%;
   }
 
   table td {
     color: black;
     background-color: #F5F5F5;
-    padding: 10px;
+    padding: 20px;
     border-bottom: 1px dotted lightgray;
   }
