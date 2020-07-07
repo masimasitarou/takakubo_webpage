@@ -21,7 +21,7 @@
                 var myId = document.getElementById("error2");
                 myId.innerHTML = "パスワードは必須です。";
             } else if(document.mail_form.id.value == "smtakakubo@nissho-ele.co.jp"　&& document.mail_form.pass.value == "aaa"){
-                window.location.href = 'menu.html';
+                window.location.href = 'home.html';
             }else{
                 var myId = document.getElementById("error2");
                 myId.innerHTML = "ユーザー名もしくはパスワードが間違っています。";
@@ -35,12 +35,10 @@
     <form class="content" action="menu.html" method="GET" name="mail_form">
 
         <p>ログインID(メールアドレス):<input type="email" id="id" placeholder="メールアドレスを入力" ></p>
-        <div id="error1"></div>
+        <div class="errorAll" id="error1"></div>
 
         <p>パスワード:<input type="password" name="pass" placeholder="パスワードを入力"></p>
-        <div id="error2">
-            <p></p>
-        </div>
+        <div class="errorAll" id="error2"></div>
 
         <button type="button"  onclick="checkForm();">ログイン</button>
         <button type="button" onclick="location.href='account_registration.html'">アカウント作成</button>
